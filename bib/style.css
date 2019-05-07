@@ -1,0 +1,22 @@
+ol {
+  counter-reset: item;
+}
+li {
+  display: block;
+}
+li:before {
+  content: counters(item, ".") " ";
+  counter-increment: item;
+}
+.quebrapagina {
+  page-break-before: always;
+}
+.p {
+  margin: 50px 50px 50px 50px;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
